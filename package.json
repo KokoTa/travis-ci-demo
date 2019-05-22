@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "cover": "nyc npm test && nyc report --reporter=text-lcov > coverage.lcov",
+    "cover": "nyc npm test test/single.js && nyc report --reporter=text-lcov > coverage.lcov",
     "jest": "jest test/ui.test.js --coverage"
   },
   "author": "",
