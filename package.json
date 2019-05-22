@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cover": "nyc mocha"
+    "mocha": "mocha",
+    "cover": "nyc report --reporter=lcov > coverage.lcov"
   },
   "author": "",
   "license": "ISC",
