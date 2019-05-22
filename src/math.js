@@ -1,3 +1,6 @@
+/**
+ * 用于单元测试
+ */
 module.exports = {
   add(...args) {
     return args.reduce((prev, curr) => prev + curr)

@@ -1,5 +1,5 @@
 /**
- * 测试代码
+ * 单元测试
  */
 const { expect } = require('chai')
 const { add, mul, minus } = require('../src/math')
