@@ -14,7 +14,7 @@
 * 关于 README 图标的获取：repo-badges
 * 基准测试：banchmark.js / jsPerf
 * UI测试：jest (可以测试 react / vue / node 等等，是一个集大成者)
-*
+* 无头浏览器：puppeteer
 
 ## 关于 commit 提交
 
