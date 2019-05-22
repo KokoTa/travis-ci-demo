@@ -1,8 +1,8 @@
 /**
- * 测试代码
+ * 单元测试
  */
 const { expect } = require('chai')
-const { add, mul } = require('../src/math')
+const { add, mul, minus } = require('../src/math')
 
 describe('Math Test', () => {
   describe('Test Add', () => {
@@ -13,6 +13,13 @@ describe('Math Test', () => {
   describe('Test Mul', () => {
     it('2 * 3', () => {
       expect(mul(2, 3)).to.equal(6)
+    })
+  })
+
+  // dev 分支新增的方法
+  describe('Test Minus', () => {
+    it('5 - 2', () => {
+      expect(minus(5, 2)).to.equal(3)
     })
   })
 })

@@ -5,13 +5,28 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "cover": "nyc npm test && nyc report --reporter=text-lcov > coverage.lcov"
+    "cover": "nyc npm test test/single.js && nyc report --reporter=text-lcov > coverage.lcov",
+    "jest": "jest test/ui.test.js --coverage"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-jest": "^24.8.0",
+    "benchmark": "^2.1.4",
     "chai": "^4.2.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.13.1",
+    "jest": "^24.8.0",
     "mocha": "^6.1.4",
-    "nyc": "^14.1.1"
+    "nyc": "^14.1.1",
+    "react-test-renderer": "^16.8.6",
+    "sinon": "^7.3.2"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   }
 }
