@@ -27,7 +27,7 @@ const func = {
     const filePath = path.join(config.url, `${Date.now()}${extname}`)
     request.get(url, (res) => {
       res.pipe(fs.createWriteStream(filePath))
-      res.on('end', () => {
+      res.on('end', () => { // 这里我们也可以用流的 finish 事件代替
         console.log(chalk.green(`${filePath} loaded`))
         callback()
       })
