@@ -1,6 +1,6 @@
 import React from 'react'
 import { configure, mount } from 'enzyme' // 渲染器，可以把它当作一个浏览器
-import sinon from 'sinon' // 统计事件
+import sinon from 'sinon' // 用于统计事件等
 import Adapter from 'enzyme-adapter-react-16' // enzyme 需要的适配器
 import UI from '../src/ui'
 

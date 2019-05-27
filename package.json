@@ -26,6 +26,7 @@
     "sinon": "^7.3.2"
   },
   "dependencies": {
+    "puppeteer": "^1.17.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }

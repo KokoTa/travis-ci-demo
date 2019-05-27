@@ -14,7 +14,7 @@
 * 关于 README 图标的获取：repo-badges
 * 基准测试：banchmark.js / jsPerf
 * UI测试：jest (可以测试 react / vue / node 等等，是一个集大成者)
-* 无头浏览器：puppeteer
+* 无头浏览器：selenium-webdriver / puppeteer
 
 ## 关于 commit 提交
 
@@ -51,3 +51,19 @@
 # For more information about this template, check out
 # https://gist.github.com/adeekshith/cd4c95a064977cdc6c50
 ```
+
+## 番外：爬虫
+
+反爬虫手段：
+
+1. User-Agent 识别、Referer 试别、访问时添加验证码
+2. 单位时间内访问次数和访问量限制
+3. 关键信息图片混淆
+4. 异步加载
+
+常用的 node 爬虫技术：
+
+1. SuperAgent + Cheerio ---> 会有反爬虫问题
+2. puppeteer ---> 模拟浏览器运行，可以反反爬虫
+
+爬虫示例见 crawler 文件夹
